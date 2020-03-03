@@ -29,7 +29,7 @@ class Validate
         $Sorted = (usort($UnNested, function ($a, $b) {
             return $b <=> $a;
         })) ? $UnNested : null;  # Ternary wrap because ↑ returns true
-        
+
         # Harvest the wheat
         # todo: Entries seem duplicated here
         $Heaviest = array_slice($Sorted, 0, 20);
@@ -41,13 +41,15 @@ class Validate
 
         foreach ($Heaviest as $Heaviest) {
             # Collect the last 2 period-separated tokens
-            $Extensions = array_slice(explode('.', strtolower($Heaviest[1])), -2, 2);
+            $Extensions = array_slice(explode('.', $Heaviest[1]), -2, 2);
             $Matches = array_merge($Extensions);
 
             # todo: Reduce nesting by one level
             foreach ($Matches as $Match) {
                 $Match = strtolower($Match);
-        
+
+		# Construct a comparison array,
+		# find the key, and GTFO
                 foreach ($FileTypeNames as $FileTypeName) {
                     $SearchMe = [ $FileTypeName, $FileTypes[$FileTypeName] ];
         
