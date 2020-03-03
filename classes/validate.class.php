@@ -35,16 +35,15 @@ class Validate
         $Heaviest = array_slice($Sorted, 0, 20);
         $Matches = [];
 
+        # Distill the file format
+        $FileTypes = $FileTypes[$Category];
+        $FileTypeNames = array_keys($FileTypes);
+
         foreach ($Heaviest as $Heaviest) {
             # Collect the last 2 period-separated tokens
             $Extensions = array_slice(explode('.', strtolower($Heaviest[1])), -2, 2);
             $Matches = array_merge($Extensions);
 
-            # Distill the file format
-            $FileTypes = $FileTypes[$Category];
-            $FileTypeNames = array_keys($FileTypes);
-
-            # todo: Find the smallest possible number of iterations
             # todo: Reduce nesting by one level
             foreach ($Matches as $Match) {
                 $Match = strtolower($Match);
@@ -55,12 +54,12 @@ class Validate
                     if (in_array($Match, $SearchMe[1])) {
                         return $SearchMe[0];
                         break;
-                    } else {
-                        return 'Other';
-                    break;
                     }
                 }
+
+                # Return the last element (Other or None)
+                return array_key_last($FileTypes);
             }
         }
     }
-    # Line 230
+    # Line 229

@@ -1,1 +1,9 @@
+# Common junk files
 .DS_Store
+*.sw*
+
+# Private files and backups
+*.*~
+*.doc
+*.docx
+*.eml

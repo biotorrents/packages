@@ -25,7 +25,7 @@ $Containers = [
   'SwissProt'  => ['dat'],
   'VCF'        => ['vcf'],
   'Plain'      => ['csv', 'txt'],
-  'Other'      => [],
+  'Other'      => [''],
 ];
 
 # Imaging Formats
@@ -42,7 +42,7 @@ $ContainersGames = [
   'PNG'       => ['png'],
   'TIFF'      => ['tif', 'tiff'],
   'WebP'      => ['webp'],
-  'Other'     => [],
+  'Other'     => [''],
 ];
 
 # Protein Formats
@@ -76,7 +76,7 @@ $ContainersProt = [
   'TraML'          => ['traml'],
   'ULVAC-PHI'      => ['tdc'],
   'Plain'          => ['csv', 'txt'],
-  'Other'          => [],
+  'Other'          => [''],
 ];
 
 # Extra Formats
@@ -99,6 +99,16 @@ $ContainersExtra = [
   'PowerPoint'       => ['ppt', 'pot', 'pps', 'pptx', 'pptm', 'potx', 'potm', 'ppam', 'ppsx', 'ppsm', 'sldx', 'sldm'],
   'PDF'              => ['pdf', 'fdf', 'xfdf'],
   'Plain'            => ['csv', 'txt'],
-  'Other'            => [],
+  'Other'            => [''],
 ];
-# Line 321
+
+$Archives = [
+  '7z'       => ['7z'],
+  'bzip2'    => ['bz2', 'bzip2'],
+  'gzip'     => ['gz', 'gzip', 'tgz', 'tpz'],
+  'Pickle'   => ['pickle', 'pkl'],
+  'RAR'      => ['rar', 'rev'],
+  'ZIP'      => ['zip', 'zipx'],
+  'None'     => [''],
+];
+# Line 331
