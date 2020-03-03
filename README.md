@@ -39,7 +39,7 @@ You don't want to ruin the database with unexpected "Autofill" formats.
 
 For this reason, extension parsing is disabled on the torrent edit handler for now.
 The FileList stored in the database, available to the edit form, is a bencoded string instead of a nested array.
-`$Validate->ParseExtensions` currently only works with the `$Tor->FileList` object before its bencoded.
+`$Validate->ParseExtensions` currently only works with the `$Tor->FileList` object before it's bencoded.
 
 Also, file extensions shared by multiple formats can't be parsed, e.g., there's no way to tell what kind of image an IMG file is.
 It could be a hard disk or an optical disc.
