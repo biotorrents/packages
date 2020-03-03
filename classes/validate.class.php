@@ -60,7 +60,8 @@ class Validate
                 }
 
                 # Return the last element (Other or None)
-                return array_key_last($FileTypes);
+		return array_key_last($FileTypes);
+		break;
             }
         }
     }
