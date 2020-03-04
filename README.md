@@ -13,7 +13,7 @@ By the way, it can be adapted to autofill any cumbersome metadata with a set of 
 
 ## In this repo
 Please find all the snippets you need to implement a similar feature on your own tracker.
-See `classes/config.php` for an idea of how the each format is associated with an array of file extensions.
+See `classes/config.php` for an idea of how each format is associated with an array of file extensions.
 I'll reproduce an example below so you can see how powerful a general extension parser can be.
 
 ```php
