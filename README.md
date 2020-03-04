@@ -8,7 +8,8 @@ If a user leaves the container or archive dropdown blank, this tool
 
 Sometimes a match isn't found.
 As a fallback, the function assigns the last key.
-Please take care to use an Other entry last as shown below.
+Please take care to use an Other entry last as shown below, or return something else.
+By the way, it can be adapted to autofill any cumbersome metadata with a set of expected values and a different set of common names.
 
 ## In this repo
 Please find all the snippets you need to implement a similar feature on your own tracker.
@@ -22,7 +23,7 @@ $ContainersExtra = [
   'Optical Disc'     => ['bin', 'ccd', 'cso', 'cue', 'daa', 'isz', 'mdf', 'mds', 'mdx', 'nrg', 'uif'],
   'Python'           => ['pxd', 'py', 'py3', 'pyc', 'pyd', 'pyde', 'pyi', 'pyo', 'pyp', 'pyt', 'pyw', 'pywz', 'pyx', 'pyz', 'rpy', 'xpy'],
   'Jupyter Notebook' => ['ipynb'],
-  'Ontology'         => ['cgif', 'cl', 'clif', 'csv', 'htm', 'html', 'kif', 'obo', 'owl', 'rdf', 'rdfa', 'rdfs', 'rif', 'tsv', 'xcl', 'xht', 'xhtml', 'xml'],
+  'Ontology'         => ['cgif', 'cl', 'clif', 'htm', 'html', 'kif', 'obo', 'owl', 'rdf', 'rdfa', 'rdfs', 'rif', 'tsv', 'xcl', 'xht', 'xhtml', 'xml'],
   'OpenDocument'     => ['odt', 'fodt', 'ods', 'fods', 'odp', 'fodp', 'odg', 'fodg', 'odf'],
   'Word'             => ['doc', 'dot', 'wbk', 'docx', 'docm', 'dotx', 'dotm', 'docb'],
   'Excel'            => ['xls', 'xlt', 'xlm', 'xlsx', 'xlsm', 'xltx', 'xltm', 'xlsb', 'xla', 'xlam', 'xll', 'xlw'],
