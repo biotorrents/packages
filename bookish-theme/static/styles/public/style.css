@@ -20,11 +20,10 @@ body {
 }
 
 body {
-    font-family: 'Bitstream Vera Sans', Tahoma, sans-serif;
+    font-family: 'NotoSans-SemiCondensed', sans-serif;
     font-size: 0.75em;
     color: black;
-    background: #edeae5;
-    /* background: url('/static/common/hiware.png'); */
+    background: white;
 }
 
 
@@ -35,13 +34,13 @@ table {
 */
 
 a {
-    color: #016670;
-    text-decoration: none;
+    color: black;
+    text-decoration: underline;
 }
 
 a:hover {
-    color: black;
-    text-decoration: underline;
+    color: #01579B;
+    text-decoration: none;
 }
 
 p {
@@ -54,7 +53,7 @@ input[type="email"] {
     color: black;
     background-color: white;
     padding: 0 0 0 6px;
-    font: 500 14px/29px Helvetica, Arial, sans-serif;
+    font: 500 14px/29px 'NotoSans-SemiCondensed', sans-serif;
     width: 100%;
     box-sizing: border-box;
 }
@@ -85,8 +84,8 @@ input[type="password"]:invalid {
 #recoverform input[type="submit"],
 input[type="submit"] {
     width: 100%;
-    background-color: #fbe180;
-    font: 500 14px/29px Helvetica, Arial, sans-serif;
+    background-color: #B3E5FC;
+    font: 500 14px/29px 'NotoSans-SemiCondensed', sans-serif;
     border: none;
     border-radius: 0 0 5px 5px;
     cursor: pointer;
@@ -95,7 +94,7 @@ input[type="submit"] {
 #loginform input[type="submit"]:hover,
 #recoverform input[type="submit"]:hover,
 input[type="submit"]:hover {
-    background-color: #fff9c7;
+    background-color: #E1F5FE;
 }
 
 #recoverform .layout td:first-child {
@@ -108,7 +107,7 @@ input[type="submit"]:hover {
 #foot {
     height: 30px;
     width: 100%;
-    background: #016670;
+    background: #01579B;
     overflow: hidden;
 }
 
@@ -136,11 +135,13 @@ input[type="submit"]:hover {
 #foot a,
 #head a {
     color: white;
+    text-decoration: none;
 }
 
 #foot a:hover,
 #head a:hover {
     color: white;
+    text-decoration: underline;
 }
 
 #content {
@@ -182,7 +183,7 @@ ul {
 #logo {
     width: 250px;
     height: 50px;
-    background-image: url('/static/common/logo-black.png');
+    background-image: url('/static/common/logos/bookish.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -210,4 +211,12 @@ ul {
 
 .notice {
     width: 250px;
+}
+
+
+/* Fonts */
+
+@font-face {
+    font-family: 'NotoSans-SemiCondensed';
+    src: url('/static/styles/fonts/NotoSans-SemiCondensed.ttf');
 }
