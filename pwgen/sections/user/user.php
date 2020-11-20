@@ -1,7 +1,6 @@
 <?php
 
 # Line 1265
-
 if (check_perms('users_edit_password')) {
 ?>
 <tr>
